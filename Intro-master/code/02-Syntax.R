@@ -137,7 +137,7 @@ x = 3
 
 1 %in% c(1, 2, 3, 4)
 1 %in% c(2, 3, 4)
-c(3,4,5,6) %in% c(2, 3, 4) 
+c(3,4,5,3) %in% c(2, 3, 4) 
 
 1 %in% c(1, 2, 3, 4)
 1 %in% c(2, 3, 4)
@@ -222,8 +222,8 @@ NA == NA
 a <- c(1, NA)
 a == NA
 is.na(a)
-
-b <- c(1, 2, 3, 4 NA)
+#added missing comma in b vector
+b <- c(1, 2, 3, 4, NA)
 sum(b)
 sum(b, na.rm = TRUE)
 
